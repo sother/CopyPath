@@ -819,6 +819,12 @@ section #title .credits.left {
 section #title .credits.right {
   float: right;
 }
+section .warranty {
+  font-size: 11px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #696969;
+}
 
 @media print, screen and (max-width: 720px) {
   #title .credits {
