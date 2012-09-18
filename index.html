@@ -21,7 +21,7 @@
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/sother/CopyPath">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/sother/CopyPath/raw/master/release/CopyPathSetup.exe" target="_blank" onclick="_gaq.push(['_trackEvent','Download','CopyPathSetup.exe',this.href]);">INSTALLER</a></li>
+          <li class="downloads"><a href="https://github.com/sother/CopyPath/raw/master/release/CopyPathSetup.exe" target="_blank" class="download">INSTALLER</a></li>
           <li class="title">DOWNLOADS</li>
         </nav>
       </div><!-- end header -->
@@ -52,7 +52,7 @@
 
         <h3>How to install?</h3>
 
-        <p>Just <a href="https://github.com/sother/CopyPath/raw/master/release/CopyPathSetup.exe" target="_blank" onclick="_gaq.push(['_trackEvent','Download','CopyPathSetup.exe',this.href]);">download the installer</a>, run it and you're done!</p>
+        <p>Just <a href="https://github.com/sother/CopyPath/raw/master/release/CopyPathSetup.exe" target="_blank" class="download">download the installer</a>, run it and you're done!</p>
 
         <h3>But in Windows 7, you can press SHIFT, right-click and select "Copy as path"...</h3>
 
@@ -82,10 +82,21 @@
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
           <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-18443216-5");
-            pageTracker._trackPageview();
-            } catch(err) {}
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-18443216-5']);
+            _gaq.push(['_trackPageview']);
+          
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+            $('.download').click(function() {
+              _gaq.push(['_trackEvent','Downloads','CopyPathSetup.exe',this.href]);
+            });
+
           </script>
 
   </body>
