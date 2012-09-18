@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyPath", "CopyPath\CopyPath.csproj", "{838517B8-3EF4-4885-AE01-8F7248DA0993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyPath.Test", "CopyPath.Test\CopyPath.Test.csproj", "{06ECB0C1-F9BB-4AB0-B6C1-6DEC386A6948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{838517B8-3EF4-4885-AE01-8F7248DA0993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838517B8-3EF4-4885-AE01-8F7248DA0993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838517B8-3EF4-4885-AE01-8F7248DA0993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838517B8-3EF4-4885-AE01-8F7248DA0993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06ECB0C1-F9BB-4AB0-B6C1-6DEC386A6948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06ECB0C1-F9BB-4AB0-B6C1-6DEC386A6948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06ECB0C1-F9BB-4AB0-B6C1-6DEC386A6948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06ECB0C1-F9BB-4AB0-B6C1-6DEC386A6948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
